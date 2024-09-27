@@ -1,0 +1,137 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr minmax(300px, 800px) 1fr;
+}
+
+.mrgn {
+  margin: 3% 10%;
+}
+
+.textTyping {
+  position: relative;
+  color: transparent;
+  -webkit-text-stroke: 1px #e2e2b6;
+}
+
+.textTyping::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #e2e2b6;
+  -webkit-text-stroke: 0px #e2e2b6;
+  overflow: hidden;
+  animation: writeAnimate 6s linear infinite;
+}
+
+@keyframes writeAnimate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+
+.container-projects {
+  padding: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.stroke-container {
+  grid-column: 1;
+}
+
+.stroke-container-2 {
+  grid-column: 2;
+}
+
+.prj {
+  position: relative;
+  font-family: "Istok Web", georgia;
+  font-size: 9vw;
+  margin: 0;
+  color: transparent;
+  -webkit-text-stroke: 0.1vw #e2e2b6;
+}
+
+.img-container {
+  width: 110%;
+  height: 80vh;
+  border: solid 1px #e2e2b6;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: rgba(3, 26, 102, 0.795) 0px 5px 15px;
+}
+
+.img-containerMini {
+  width: 40%;
+  height: 30%;
+  grid-column: 2;
+}
+
+.img-detail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.img-container:hover img {
+  transform: scale(1.1);
+}
+
+.p-01 {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-size: 1.455rem;
+  margin-top: 10px;
+}
+
+.origamid {
+  font-weight: bold;
+  color: #320d9e;
+  transition: 0.3s;
+}
+
+.origamid:hover {
+  color: #200769;
+}
+
+.flex-mini-imgs {
+  display: flex;
+  flex-direction: column;
+}
+
+.gitLink {
+  color: #320d9e;
+  font-family: "IBM Plex Mono", monospace;
+  text-align: right;
+  margin-right: 5%;
+  font-size: 1.24rem;
+  margin-bottom: 18px;
+}
+
+.svg-github {
+  width: 4%;
+  margin-left: 1%;
+  fill: #320d9e;
+}
+
+.gitLink a {
+  border-radius: 8px;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+.gitLink a:hover{
+  text-decoration: underline;
+  color: #200769;
+}
+
