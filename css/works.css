@@ -1,0 +1,126 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr minmax(300px, 800px) 1fr;
+}
+
+.mrgn {
+  margin: 3% 6%;
+}
+
+.textTyping {
+  position: relative;
+  color: transparent;
+  -webkit-text-stroke: 1px #e2e2b6;
+}
+
+.textTyping::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #e2e2b6;
+  -webkit-text-stroke: 0px #e2e2b6;
+  overflow: hidden;
+  animation: writeAnimate 6s linear infinite;
+}
+
+@keyframes writeAnimate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+
+.container-projects {
+  padding: 5%;
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: 1fr;
+}
+
+.stroke-container {
+  grid-column: 1;
+}
+
+.stroke-container-2 {
+  grid-column: 2;
+}
+
+.intoFlex {
+  display: flex;
+  gap: 40px;
+}
+
+.prj {
+  position: relative;
+  font-family: "Istok Web", georgia;
+  font-size: 9vw;
+  margin: 0;
+  color: transparent;
+  -webkit-text-stroke: 0.1vw #e2e2b6;
+}
+
+.img-container {
+  width: 40%;
+  height: 60vh;
+  border: solid 1px #e2e2b6;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: rgba(3, 26, 102, 0.795) 0px 5px 15px;
+  text-align: justify;
+}
+
+.miniImg {
+  width: 30%;
+  height: 60vh;
+}
+
+.img-detail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.img-container:hover img {
+  transform: scale(1.1);
+}
+
+.origamid {
+  font-weight: bold;
+  color: #320d9e;
+  transition: 0.3s;
+}
+
+.origamid:hover {
+  color: #200769;
+}
+
+.gitLink {
+  text-align: right;
+  margin-right: 4%;
+  margin-bottom: 18px;
+}
+
+.svg-github {
+  width: 3%;
+  margin-left: 1%;
+  fill: #310d9ee0;
+  transition: 0.4s;
+  background-color: #e2e2b6;
+  padding: 0.5em;
+  border-radius: 50%;
+}
+
+.svg-github:hover {
+  transform: scale(1.1);
+  fill: #320d9e;
+  background-color: #d6d6aa;
+}

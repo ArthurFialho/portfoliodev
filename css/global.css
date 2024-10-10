@@ -1,0 +1,270 @@
+body,
+h1,
+h2,
+ul,
+li,
+p,
+dd,
+dt,
+dl {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  display: flex;
+  padding-inline: 2%;
+  margin-top: 8px;
+  gap: 10px;
+  border-bottom: 1px solid #b6b6b6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: linear-gradient(
+    -100deg,
+    #042949 8%,
+    #03346e 35%,
+    #6eacda 55%,
+    #4801ff 125%
+  );
+  background-size: 300% 300%;
+  -webkit-font-smoothing: antialised;
+  animation: color 16s ease-in-out infinite;
+  color: #fff;
+  /* background: linear-gradient(
+    -100deg,
+    #000000  10%,
+    #1c1c1c  45%,
+    #181818 60%,
+    #252525  90%
+  );
+  background-size: 300% 300%;
+  -webkit-font-smoothing: antialised;
+  animation: color 10s ease-in-out infinite; */
+  color: #fff;
+}
+
+@keyframes color {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dev-name {
+  font-family: "Bonheur Royale", sans-serif;
+  font-size: 1.4rem;
+  color: #e2e2b6;
+}
+
+.container-elements-detail {
+  display: flex;
+  gap: 6px;
+  text-align: center;
+}
+
+#logo {
+  max-width: 408%;
+  padding-left: 40%;
+  margin-top: 10px;
+  /* position: fixed; */
+  transition: 0.2s;
+}
+
+#logo:hover {
+  transform: scale(1.08);
+}
+
+.styleh2 {
+  font-family: "Megrim", monospace;
+  font-size: 8.255rem;
+  color: #021526;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.styleh2::selection {
+  background-color: #e2e2b6;
+}
+
+.styleh2 span {
+  transition: 0.5s;
+}
+
+.styleh2:hover span:nth-child(1) {
+  margin-right: 10px;
+}
+
+.styleh2:hover span:nth-child(1)::after {
+  content: "'";
+}
+.styleh2:hover span:nth-child(2) {
+  margin-left: 12px;
+}
+
+.styleh2:hover span {
+  color: #e2e2b6;
+  text-shadow: 0px 0px 2px #e2e2b6, 0px 0px 4px #e2e2b6, 0px 0px 5px #e2e2b6;
+}
+
+.spanh2 {
+  font-size: 2rem;
+}
+
+.h3style {
+  font-family: "Inknut Antiqua", sans-serif;
+  font-size: 1.5rem;
+  color: #e2e2b6;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr minmax(300px, 800px) 1fr;
+}
+
+.menu {
+  grid-column: 3 / 5;
+  margin-top: 1rem;
+  margin-bottom: 2.3rem;
+  background-color: #e2e2b6;
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  margin-right: 10px;
+  color: #a0a0a0;
+  text-decoration: none;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+}
+
+.cotemig-link {
+  text-decoration: none;
+  font-family: "IBM Plex Mono", monospace;
+  color: rgb(0, 109, 9);
+  font-weight: bold;
+}
+
+.cotemig-link:hover {
+  color: rgb(0, 80, 7);
+  transition: 0.3s;
+}
+
+.contact-link {
+  text-decoration: none;
+  font-family: "IBM Plex Mono", monospace;
+  color: #a0a0a0;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact-link:hover {
+  color: #021526;
+}
+
+.menu li a:hover {
+  color: #021526;
+  transition: 0.3s;
+}
+
+.grid-section {
+  grid-column: 2 / -1;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 90px 300px 1fr;
+  grid-gap: 20px;
+  margin-bottom: 4rem;
+}
+
+.titulo {
+  font-family: "Istok Web", georgia;
+  font-size: 5.575rem;
+  line-height: 1;
+  font-weight: normal; /*ou 400*/
+  margin-bottom: 0.5rem;
+  grid-column: 1 / 4;
+  color: #e2e2b6;
+}
+
+.titulo::selection {
+  background-color: #03346e;
+}
+
+.h3style::selection {
+  background-color: #6eacda;
+}
+
+.p-01 {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-size: 1.355rem;
+  margin-top: 10px;
+}
+
+.p-02 {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 530;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+img::selection {
+  background-color: #6eacda;
+}
+
+dt::selection {
+  background-color: #6eacda;
+}
+
+dd::selection {
+  background-color: #6eacda;
+}
+
+li::selection {
+  background-color: #6eacda;
+}
+
+p::selection {
+  background-color: #6eacda;
+}
+
+a::selection {
+  background-color: #6eacda;
+}
