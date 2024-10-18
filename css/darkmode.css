@@ -133,6 +133,6 @@
 }
 
 #darkmode-id:checked + span::before {
-  background-image: url("/img/moon-and-star.png");
+  background-image: url("./moon-and-star.png");
   left: 45%;
 }
