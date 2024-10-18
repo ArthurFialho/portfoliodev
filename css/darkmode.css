@@ -1,22 +1,20 @@
 .darkmode {
-  background: linear-gradient(
-    -100deg,
-    #131131 5%,
-    #3f3670 45%,
-    #393374 55%,
-    #280238 125%
-  );
+  background: linear-gradient(-100deg,
+      #131131 5%,
+      #3f3670 45%,
+      #393374 55%,
+      #280238 125%);
   background-size: 300% 300%;
   -webkit-font-smoothing: antialised;
   animation: color 10s ease-in-out infinite;
 
   .menu {
-    background-color: transparent;
+    background-color: #23214d;
     border: 1px solid #cd1818;
   }
 
   .copy {
-    background-color: #433d8b;
+    background-color: #23214d;
     border: 1px solid #cd1818;
     color: #fff;
   }
@@ -41,9 +39,11 @@
   .h3style {
     color: #cd1818;
   }
+
   .styleh2 {
     color: #0b0a1b;
   }
+
   .styleh2 span {
     transition: 0.5s;
   }
@@ -66,28 +66,72 @@
       0px 0px 6px #cd1818, 0px 0px 7px #cd1818, 0px 0px 8px #cd1818,
       0px 0px 9px #cd1818, 0px 0px 10px #cd1818;
   }
+
   .back-bege {
     border: 2px solid #cd1818;
   }
+
   #javascript-img {
     border: 2px solid #cd1818;
   }
+
   .svg-github {
     border: 1px solid #cd1818;
   }
+
   .wave {
-    filter: drop-shadow(22px 20px 26px #cd1818);
+    filter: drop-shadow(30px 30px 40px #cd1818);
   }
+
   .dropdown-menu {
-    border: 1px solid rgb(49, 11, 145);
+    border: 1px solid #23214d;
     background-color: #131131;
   }
+
   .dropdown-menu::before {
     border-bottom: 10px solid #cd1818;
   }
+
   .dev-name:hover {
     color: #c04d4d;
   }
+
+  .img::selection {
+    background-color: #c04d4d;
+  }
+
+  dt::selection {
+    background-color: #c04d4d;
+  }
+
+  dd::selection {
+    background-color: #c04d4d;
+  }
+
+  li::selection {
+    background-color: #c04d4d;
+  }
+
+  p::selection {
+    background-color: #c04d4d;
+  }
+
+  a::selection {
+    background-color: #c04d4d;
+  }
+
+  h1::selection {
+    background-color: #c04d4d;
+  }
+
+  h2::selection {
+    background-color: #c04d4d;
+  }
+
+  h3::selection {
+    background-color: #c04d4d;
+  }
+
 }
 
 #label {
@@ -132,7 +176,7 @@
   border-radius: 50%;
 }
 
-#darkmode-id:checked + span::before {
+#darkmode-id:checked+span::before {
   background-image: url("./moon-and-star.png");
   left: 45%;
 }
