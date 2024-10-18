@@ -1,9 +1,3 @@
-.detail-above {
-  font-family: "Istok Web", monospace;
-  font-weight: 600;
-  color: #e2e2b6;
-}
-
 .faq-lista {
   grid-column: 2 / 4;
 }

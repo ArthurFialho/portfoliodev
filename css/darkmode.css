@@ -1,3 +1,95 @@
+.darkmode {
+  background: linear-gradient(
+    -100deg,
+    #131131 5%,
+    #3f3670 45%,
+    #393374 55%,
+    #280238 125%
+  );
+  background-size: 300% 300%;
+  -webkit-font-smoothing: antialised;
+  animation: color 10s ease-in-out infinite;
+
+  .menu {
+    background-color: transparent;
+    border: 1px solid #cd1818;
+  }
+
+  .copy {
+    background-color: #433d8b;
+    border: 1px solid #cd1818;
+    color: #fff;
+  }
+
+  .copy svg {
+    fill: #fff;
+  }
+
+  .styleh2 {
+    color: #23214d;
+  }
+
+  .faq-lista dt::before,
+  .dados li::before {
+    background-color: #cd1818;
+  }
+
+  .menu li a:hover {
+    color: #fff;
+  }
+
+  .h3style {
+    color: #cd1818;
+  }
+  .styleh2 {
+    color: #0b0a1b;
+  }
+  .styleh2 span {
+    transition: 0.5s;
+  }
+
+  .styleh2:hover span:nth-child(1) {
+    margin-right: 10px;
+  }
+
+  .styleh2:hover span:nth-child(1)::after {
+    content: "'";
+  }
+
+  .styleh2:hover span:nth-child(2) {
+    margin-left: 12px;
+  }
+
+  .styleh2:hover span {
+    color: #e2e2b6;
+    text-shadow: 0px 0px 2px #cd1818, 0px 0px 4px #cd1818, 0px 0px 5px #cd1818,
+      0px 0px 6px #cd1818, 0px 0px 7px #cd1818, 0px 0px 8px #cd1818,
+      0px 0px 9px #cd1818, 0px 0px 10px #cd1818;
+  }
+  .back-bege {
+    border: 2px solid #cd1818;
+  }
+  #javascript-img {
+    border: 2px solid #cd1818;
+  }
+  .svg-github {
+    border: 1px solid #cd1818;
+  }
+  .wave {
+    filter: drop-shadow(22px 20px 26px #cd1818);
+  }
+  .dropdown-menu {
+    border: 1px solid rgb(49, 11, 145);
+    background-color: #131131;
+  }
+  .dropdown-menu::before {
+    border-bottom: 10px solid #cd1818;
+  }
+  .dev-name:hover {
+    color: #c04d4d;
+  }
+}
+
 #label {
   display: inline-block;
   background-color: #ffffff9c;

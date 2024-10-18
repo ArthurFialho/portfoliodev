@@ -34,11 +34,13 @@ ul {
 }
 
 body {
-  background: linear-gradient(-100deg,
-      #042949 8%,
-      #03346e 35%,
-      #6eacda 55%,
-      #4801ff 125%);
+  background: linear-gradient(
+    -100deg,
+    #042949 8%,
+    #03346e 35%,
+    #6eacda 55%,
+    #4801ff 145%
+  );
   background-size: 300% 300%;
   -webkit-font-smoothing: antialised;
   animation: color 16s ease-in-out infinite;
@@ -46,75 +48,9 @@ body {
   overflow-x: hidden;
 }
 
-.darkmode {
-  background: linear-gradient(-100deg,
-      #131131 8%,
-      #261d58 35%,
-      #393374 55%,
-      #2a033b 125%);
-  background-size: 300% 300%;
-  -webkit-font-smoothing: antialised;
-  animation: color 10s ease-in-out infinite;
-
-  .menu {
-    background-color: #433D8B;
-    border: 1px solid #CD1818;
-  }
-
-  .copy {
-    background-color: #433D8B;
-    border: 1px solid #CD1818;
-    color: #fff;
-  }
-
-  .copy svg {
-    fill: #fff;
-  }
-
-  .styleh2 {
-    color: #23214d;
-  }
-
-  .faq-lista dt::before,
-  .dados li::before {
-    background-color: #CD1818;
-  }
-
-  .menu li a:hover {
-    color: #CD1818;
-  }
-
-  .h3style {
-    color: #CD1818;
-  }
-
-  .styleh2 span {
-    transition: 0.5s;
-  }
-
-  .styleh2:hover span:nth-child(1) {
-    margin-right: 10px;
-  }
-
-  .styleh2:hover span:nth-child(1)::after {
-    content: "'";
-  }
-
-  .styleh2:hover span:nth-child(2) {
-    margin-left: 12px;
-  }
-
-  .styleh2:hover span {
-    color: #e2e2b6;
-    text-shadow: 0px 0px 2px #CD1818, 0px 0px 4px #CD1818, 0px 0px 5px #CD1818;
-  }
-
-}
-
 .mrgn {
   margin: 4% 7%;
 }
-
 
 @keyframes color {
   0% {
@@ -135,10 +71,39 @@ header {
   justify-content: space-between;
 }
 
+.detail-above {
+  font-family: "Istok Web", monospace;
+  font-weight: 600;
+  color: #e2e2b6;
+}
+
 .dev-name {
   font-family: "Bonheur Royale", sans-serif;
   font-size: 1.4rem;
   color: #e2e2b6;
+}
+
+.dev-name:hover {
+  color: #6eacda;
+  transition: 0.2s;
+}
+
+#flex-brazil {
+  display: flex;
+  gap: 6px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+#flex-brazil:hover img {
+  filter: brightness(60%);
+  transition: 0.2s;
+}
+
+.brazil-img {
+  max-width: 24%;
 }
 
 .container-elements-detail {
@@ -148,8 +113,8 @@ header {
 }
 
 #logo {
-  max-width: 408%;
-  padding-left: 40%;
+  max-width: 60%;
+  margin-left: 40%;
   margin-top: 10px;
   /* position: fixed; */
   transition: 0.2s;

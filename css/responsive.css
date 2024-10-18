@@ -103,11 +103,11 @@
   }
 }
 
-@media (max-width: 1900px) {
+@media (min-width: 1900px) {
   #logo {
-    max-width: 55%;
+    max-width: 40%;
   }
   .styleh2 {
-    font-size: 9rem;
+    font-size: 10.655rem;
   }
 }

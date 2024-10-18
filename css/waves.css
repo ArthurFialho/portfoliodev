@@ -5,6 +5,10 @@
   overflow: hidden;
 }
 
+.wave {
+  filter: drop-shadow(22px 20px 26px #4801ff);
+}
+
 .fatherWave .wave {
   position: absolute;
   bottom: 0;
