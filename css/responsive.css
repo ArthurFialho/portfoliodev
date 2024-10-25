@@ -79,7 +79,7 @@
   .fatherWave {
     position: relative;
     width: 100%;
-    height: 40vh;
+    height: 20vh;
     overflow: hidden;
   }
 
@@ -124,5 +124,25 @@
 
   .styleh2 {
     font-size: 10.655rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  #logo {
+    max-width: 47%;
+  }
+
+  .styleh2 {
+    font-size: 10.255rem;
+  }
+}
+
+@media (min-width: 1900px) {
+  #logo {
+    max-width: 40%;
+  }
+
+  .styleh2 {
+    font-size: 11.655rem;
   }
 }

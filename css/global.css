@@ -34,13 +34,11 @@ ul {
 }
 
 body {
-  background: linear-gradient(
-    -100deg,
-    #042949 8%,
-    #03346e 35%,
-    #6eacda 55%,
-    #4801ff 145%
-  );
+  background: linear-gradient(-100deg,
+      #120fbdd0 8%,
+      #03346e 35%,
+      #6eacda 55%,
+      #4801ff 145%);
   background-size: 300% 300%;
   -webkit-font-smoothing: antialised;
   animation: color 16s ease-in-out infinite;
@@ -155,7 +153,7 @@ header {
 
 .styleh2:hover span {
   color: #e2e2b6;
-  text-shadow: 0px 0px 2px #e2e2b6, 0px 0px 4px #e2e2b6, 0px 0px 5px #e2e2b6;
+  text-shadow: 0px 0px 2px #e2e2b6, 0px 0px 4px #e2e2b6, 0px 0px 6px #e2e2b6, 0px 0px 7px #e2e2b6;
 }
 
 .spanh2 {
