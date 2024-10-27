@@ -50,10 +50,10 @@
   box-shadow: none;
   border: none;
   outline: none;
-  font-size: 18px;
+  font-size: 16px;
   padding: 0 10px;
   z-index: 1;
-  color: #001a3a;
+  color: #000d1d;
 }
 
 .container-contact .row100 .inputBox .text {
@@ -111,4 +111,13 @@
 .container-contact .row100 .inputBox textarea:focus ~ .line,
 .container-contact .row100 .inputBox textarea:valid ~ .line {
   height: 100%;
+}
+
+.container-contact .row100 .inputBox input::placeholder {
+  color: transparent; /* Esconde o placeholder */
+  transition: color 0.3s ease; /* Suaviza a transição */
+}
+
+.container-contact .row100 .inputBox input:focus::placeholder {
+  color: #969696; /* Altera a cor do placeholder ao focar */
 }

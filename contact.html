@@ -97,7 +97,7 @@
         </div>
         <div class="col">
           <div class="inputBox">
-            <input type="text" name="" required="required">
+            <input type="tel" maxlength="14" id="fone" required="required" oninput="mask()" onfocus="showPlaceholder(this)" onblur="hidePlaceholder(this)">
             <span class="text">Phone</span>
             <span class="line"></span>
           </div>
@@ -166,6 +166,7 @@
 </section>
 
 <script src="darkmode.js"></script>
+<script src="mask.js"></script>
 <script type="module" src="./js/script.js" defer></script>
 </body>
 
