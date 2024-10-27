@@ -1,9 +1,11 @@
 .darkmode {
-  background: linear-gradient(-100deg,
-      #131131 5%,
-      #3f3670 45%,
-      #393374 55%,
-      #280238 125%);
+  background: linear-gradient(
+    -100deg,
+    #131131 5%,
+    #302279 45%,
+    #1c1749 55%,
+    #280238 125%
+  );
   background-size: 300% 300%;
   -webkit-font-smoothing: antialised;
   animation: color 10s ease-in-out infinite;
@@ -150,6 +152,44 @@
   #label:hover {
     background-color: #5c575769;
   }
+  .button__content {
+    background: var(--gradient-color-dark);
+    border: 3px solid var(--black-color-dark);
+    color: var(--black-color-dark);
+  }
+  .button__reflection-1,
+  .button__reflection-2 {
+    background-color: var(--reflection-color-dark);
+  }
+
+  .button__reflection-1::after {
+    background-color: var(--reflection-color-dark);
+  }
+
+  .button__reflection-2::after {
+    background-color: var(--reflection-color-dark);
+  }
+
+  .button__shadow {
+    background: var(--gradient-color-dark);
+    border: 3px solid var(--black-color-dark);
+  }
+  .container-contact {
+    box-shadow: -6px 0 7px rgba(255, 0, 0, 0.5), 6px 0 7px rgba(255, 0, 0, 0.5),
+      0 6px 7px rgba(255, 0, 0, 0.5);
+  }
+  .tooltip {
+    border: 1px solid #cd1818;
+    background-color: #cd1818bd;
+  }
+  .tooltip:hover {
+    background-color: #cd1818f6;
+    transition: 0.3s;
+    border: 1px solid #e2e2b6;
+  }
+  .titulo-contact {
+    border-bottom: 2px solid #cd1818;
+  }
 }
 
 #label {
@@ -194,7 +234,7 @@
   border-radius: 50%;
 }
 
-#darkmode-id:checked+span::before {
+#darkmode-id:checked + span::before {
   background-image: url("./moon-and-star.png");
   left: 45%;
 }
