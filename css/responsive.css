@@ -86,7 +86,7 @@
     font-size: 1rem;
   }
 
-  .styleh2>span {
+  .styleh2 > span {
     color: #e2e2b6;
     text-shadow: 0px 0px 2px #e2e2b6, 0px 0px 4px #e2e2b6, 0px 0px 5px #e2e2b6;
   }
@@ -116,6 +116,7 @@
   }
   .titulo-contact {
     font-size: 3rem;
+    padding: 5px;
   }
 }
 
