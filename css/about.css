@@ -1,21 +1,12 @@
-.container-about {
-    padding: 5%;
-}
-
-.foto-container {
-    position: relative;
-}
-
 #foto {
-    position: absolute;
-    z-index: 2000;
     width: 30%;
+    text-align: center;
 }
 
 .container-flex-about {
-    width: 100%;
     display: flex;
-    justify-content: space-around;
+    padding: 5%;
+    justify-content: space-evenly;
 }
 
 .minmax {

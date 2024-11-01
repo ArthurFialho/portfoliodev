@@ -23,6 +23,9 @@
 </head>
 
 <body>
+  <div class="preloader" id="preloader">
+    <div class="loader" id="loader"></div>
+  </div>
   <header>
     <div class="container-elements-detail">
       <span class="dev-name"><a href="./">Arthur Fialho</a></span>
@@ -63,14 +66,10 @@
     </div>
   </div>
   <section class="gridAbout">
-    <div class="container-about">
       <div class="container-flex-about">
         <div class="designer-div">
           <h1><a href="./graduation.html">Designer</a></h1>
           <p>specialist in UI|UX design<br>and minimalist projects</p>
-        </div>
-        <div class="foto-container">
-          <img id="foto" src="./img/foto.png" alt="">
         </div>
         <div class="designer-div">
           <h1><a href="./graduation.html"><span class="minmax">
@@ -78,7 +77,6 @@
           <p>front end developer who writes<br>clean and elegance projects</p>
         </div>
       </div>
-    </div>
     <div class="grid-container">
       <button class="botao">
         <svg id="compass-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -103,7 +101,9 @@
     <div class="wave wave3"></div>
     <div class="wave wave4"></div>
   </section>
+
   <script src="darkmode.js"></script>
+  <script src="loading.js"></script> 
   <script type="module" src="./js/script.js" defer></script>
 </body>
 

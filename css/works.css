@@ -73,6 +73,12 @@
   text-align: justify;
 }
 
+.img-container:hover {
+  box-shadow: 0 0 15px #dfdfdf, 
+  0 0 20px #dfdfdf; 
+  transition: .3s;
+}
+
 .miniImg {
   width: 30%;
   height: 60vh;
