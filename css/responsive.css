@@ -16,25 +16,8 @@
     font-size: 10.255rem;
   }
 }
-@media (max-width: 1068px) {
-  .about-container .about-contents {
-    grid-template-areas:
-      "imageSect skillSect"
-      "infoSect infoSect";
-  }
-  .skillSection {
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-  }
-}
-@media (max-width: 868px) {
-  .about-container .about-contents {
-    grid-template-areas:
-      "imageSect imageSect"
-      "infoSect infoSect"
-      "skillSect skillSect";
-  }
-}
+
+
 @media (max-width: 700px) {
   .grid-container {
     grid-template-columns: 1fr;
@@ -156,8 +139,4 @@
     padding: 5px;
   }
 }
-@media (max-width: 668px) {
-  .personalInfo {
-    grid-template-columns: 1fr;
-  }
-}
+
