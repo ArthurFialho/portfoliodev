@@ -95,10 +95,9 @@
     border-bottom: 10px solid #cd1818;
   }
 
-  .img-container:hover{
-    box-shadow: 0 0 15px rgba(205, 24, 24, 0.8), 
-    0 0 20px rgba(205, 24, 24, 0.7); 
-    transition: .3s;
+  .img-container:hover {
+    box-shadow: 0 0 15px rgba(205, 24, 24, 0.8), 0 0 20px rgba(205, 24, 24, 0.7);
+    transition: 0.3s;
   }
   .dev-name:hover {
     color: #c04d4d;
@@ -196,12 +195,30 @@
     border-bottom: 2px solid #cd1818;
   }
   .preloader {
-	background-color: #23214d6e;    
+    background-color: #23214d6e;
   }
   .loader {
-    box-shadow: 0 0 35px rgba(205, 24, 24, 0.8), 
-    0 0 55px rgba(205, 24, 24, 0.7); 
-    border-top: 8px solid #cd181875;  
+    box-shadow: 0 0 35px rgba(205, 24, 24, 0.8), 0 0 55px rgba(205, 24, 24, 0.7);
+    border-top: 8px solid #cd181875;
+  }
+  .about-contents .imageSection::after {
+    outline: 3px solid #cd1818;
+  }
+  .progress-line {
+    background-color: #cd1818;
+  }
+  .infoSection h1::before {
+    background-color: #cd1818;
+  }
+
+  .infoSection h1::after {
+    background-color: #cd1818;
+  }
+  .infoSection a {
+    border-color: #cd1818;
+  }
+  .infoSection a:hover {
+    border-color: #6b1010;
   }
 }
 

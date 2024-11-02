@@ -1,3 +1,40 @@
+@media (min-width: 1900px) {
+  #logo {
+    max-width: 40%;
+  }
+
+  .styleh2 {
+    font-size: 11.655rem;
+  }
+}
+@media (min-width: 1400px) {
+  #logo {
+    max-width: 47%;
+  }
+
+  .styleh2 {
+    font-size: 10.255rem;
+  }
+}
+@media (max-width: 1068px) {
+  .about-container .about-contents {
+    grid-template-areas:
+      "imageSect skillSect"
+      "infoSect infoSect";
+  }
+  .skillSection {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
+@media (max-width: 868px) {
+  .about-container .about-contents {
+    grid-template-areas:
+      "imageSect imageSect"
+      "infoSect infoSect"
+      "skillSect skillSect";
+  }
+}
 @media (max-width: 700px) {
   .grid-container {
     grid-template-columns: 1fr;
@@ -119,33 +156,8 @@
     padding: 5px;
   }
 }
-
-@media (min-width: 1900px) {
-  #logo {
-    max-width: 40%;
-  }
-
-  .styleh2 {
-    font-size: 10.655rem;
-  }
-}
-
-@media (min-width: 1400px) {
-  #logo {
-    max-width: 47%;
-  }
-
-  .styleh2 {
-    font-size: 10.255rem;
-  }
-}
-
-@media (min-width: 1900px) {
-  #logo {
-    max-width: 40%;
-  }
-
-  .styleh2 {
-    font-size: 11.655rem;
+@media (max-width: 668px) {
+  .personalInfo {
+    grid-template-columns: 1fr;
   }
 }

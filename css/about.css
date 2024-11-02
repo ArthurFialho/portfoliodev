@@ -1,35 +1,197 @@
-#foto {
-    width: 30%;
-    text-align: center;
+.bodyAbout {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.container-flex-about {
-    display: flex;
-    padding: 5%;
-    justify-content: space-evenly;
+.about-container {
+  width: 100%;
+  padding: 50px 8%;
 }
 
-.minmax {
-    font-size: 1.7rem;
-    margin: 3px;
+.imageSection {
+  grid-area: imageSect;
 }
 
-.designer-div h1 {
-    font-family: "Istok Web", georgia;
-    font-size: 2.575rem;
-    line-height: 1;
-    font-weight: 600;
-    margin-bottom: 0.3rem;
-    color: #e2e2b6;
-    text-align:center;
+.infoSection {
+  grid-area: infoSect;
 }
 
-.designer-div p {
-    font-family: "IBM PLex Mono", monospace;
-    font-size: 0.945rem;
-    text-align: center;
+.skillSection {
+  grid-area: skillSect;
 }
 
-.father-detail-img {
-    display: flex;    
+.about-container .about-contents {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  grid-gap: 70px;
+  grid-template-areas:
+    "imageSect infoSect"
+    "skillSect skillSect";
+}
+
+.about-contents .imageSection {
+  position: relative;
+  min-width: 300px;
+  height: 380px;
+}
+
+.imageSection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+  background-color: #e2e2b6;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+.imageSection:hover img {
+  transform: scale(1.06);
+}
+
+.about-contents .imageSection::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  outline: 3px solid #03346e;
+  top: 15px;
+  left: 15px;
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.infoSection h1 {
+  color: #e2e2b6;
+  font-size: 1.975rem;
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.infoSection h1::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  outline: 3px solid transparent;
+  top: 110%;
+  left: 0px;
+  background-color: #e2e2b6;
+}
+
+.infoSection h1::after {
+  position: absolute;
+  content: "";
+  width: 40%;
+  height: 3px;
+  top: calc(110% - 1px);
+  left: 0px;
+  background-color: #e2e2b6;
+}
+
+.infoSection h2 {
+  color: #e2e2b6;
+  font-size: 1.175rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  padding: 14px 0px 15px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.infoSection p {
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: justify;
+  padding-bottom: 8px;
+  color: #fff;
+}
+
+.personalInfo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px 20px;
+  margin-top: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e2b6;
+  margin-bottom: 20px;
+}
+
+.personalInfo div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.personalInfo div span {
+  letter-spacing: 1px;
+}
+
+.infoSection a {
+  min-width: 150px;
+  padding: 8px 18px;
+  border: 1px solid #03346e;
+  border-radius: 25px;
+  font-size: 18px;
+  background-color: #e2e2b6;
+  color: #3b3b3b;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-top: 20px;
+}
+
+.infoSection a:hover {
+  background-color: #aeadbe;
+  border-color: #021c3b;
+}
+
+.skillSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px 80px;
+}
+
+.skillSection .subject {
+  font-size: 16px;
+  font-weight: thin;
+  color: #e2e2b6;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 14px;
+  background-color: #2b2a2f;
+  padding: 4px 6px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #444;
+  border-radius: 15px;
+}
+
+.progress-line {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #787cb5;
+  box-shadow: -1px -1px 2px #222222, 1px 1px 2px #111111;
+  border-radius: 15px;
+}
+
+.progress-line::after {
+  position: absolute;
+  content: attr(value);
+  top: -35px;
+  right: 0;
+  transform: translateX(-50%);
+  color: #e2e2b6;
+  font-size: 15px;
 }
